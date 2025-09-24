@@ -6,10 +6,6 @@ An interactive command-line interface tool to track football fixtures, results, 
 
 <img width="1352" height="804" alt="image" src="https://github.com/user-attachments/assets/323616a8-8534-4eab-b7d4-25493dc0aecd" />
 
-<img width="1370" height="781" alt="image" src="https://github.com/user-attachments/assets/a3d88efb-86c5-4c90-be3d-a233d02a02be" />
-
-<img width="1352" height="804" alt="image" src="https://github.com/user-attachments/assets/6bf20fab-4fdd-4023-a7ed-4986287caeee" />
-
 
 ## Features
 
@@ -84,9 +80,6 @@ The application launches directly into interactive mode - no additional flags ne
 
 The application launches directly into interactive mode with vim-style navigation:
 
-### Menu Structure
-- **Top Bar**: League selection (EPL, La Liga, Serie A, Ligue 1, Bundesliga, UCL)
-- **Bottom Bar**: View selection (Table, Fixtures, Results)
 
 ### Navigation Keys
 
@@ -99,9 +92,6 @@ The application launches directly into interactive mode with vim-style navigatio
 | `q` / `Esc` | Quit application |
 | `?` | Toggle help screen |
 
-### Menu Levels
-1. **Leagues Menu** (Top): Navigate between different competitions
-2. **Views Menu** (Bottom): Switch between Table/Fixtures/Results
 
 ### Available Views
 
@@ -111,75 +101,25 @@ The application launches directly into interactive mode with vim-style navigatio
 - Win/draw/loss statistics
 
 #### Fixtures View
+
+<img width="1370" height="781" alt="image" src="https://github.com/user-attachments/assets/a3d88efb-86c5-4c90-be3d-a233d02a02be" />
+
 - Upcoming matches for the next 7 days
 - Match times and team matchups
 - Grouped by date for easy browsing
 
 #### Results View
+
+<img width="1352" height="804" alt="image" src="https://github.com/user-attachments/assets/6bf20fab-4fdd-4023-a7ed-4986287caeee" />
+
 - Recent match results from the last 7 days
 - Final scores and match details
 - Sorted by most recent first
 
-## Available Leagues
-
-- **EPL** - Premier League (England)
-- **La Liga** - La Liga (Spain)
-- **Serie A** - Serie A (Italy)
-- **Ligue 1** - Ligue 1 (France)
-- **Bundesliga** - Bundesliga (Germany)
-- **UCL** - UEFA Champions League
-
-
-### Navigation Examples
-Once in interactive mode:
-- Press `1` to jump to EPL (default)
-- Press `2` to jump to La Liga
-- Press `6` to jump to UCL
-- Press `j` to move to the views menu
-- Press `l` to switch to Fixtures view
-- Press `r` to refresh data
-- Press `?` to see help
-- Press `q` to quit
-
-## Configuration
-
-The CLI stores cached data in `~/.config/football-track/`:
-- `config.json` - Application settings
-- `teams.json` - Cached team data for faster lookups
 
 ## Data Source
 
-Data is fetched from 365scores.com API, providing real-time information for:
-- Match fixtures and results
-- Live scores and match status
-- League standings and statistics
-- Team information
-
-## Development
-
-### Project Structure
-```
-├── bin/football-track          # CLI entry point
-├── src/
-│   ├── api.js                  # API client for 365scores
-│   ├── config.js               # Competition configurations
-│   ├── config-manager.js       # Settings management
-│   ├── formatter.js            # Output formatting
-│   ├── utils.js                # Utility functions
-│   ├── interactive.js          # Interactive mode implementation
-│   └── commands/
-│       ├── index.js
-│       └── interactive.js
-└── package.json
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+Data is fetched from 365scores.com API, providing real-time information.
 
 ## License
 
