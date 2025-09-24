@@ -41,40 +41,10 @@ After global installation, you can run the application from anywhere:
 football-track
 ```
 
-### Option 2: Local Installation
-
-For development or local use only:
-
-```bash
-# Clone and setup
-git clone <repository-url>
-cd Football-Track
-npm install
-chmod +x bin/football-track
-
-# Run directly from project directory
-./bin/football-track
-
-# Or use npm link for local global access
-npm link
-```
-
-### Option 3: Direct Installation from npm (if published)
-
-```bash
-# Install globally from npm registry
-npm install -g football-track-cli
-
-# Run from anywhere
-football-track
-```
-
 ### Uninstalling
 
 To remove the global installation:
 ```bash
-# Uninstall globally
-sudo npm uninstall -g football-track-cli
 # or if installed from source
 sudo npm uninstall -g .
 ```
@@ -150,18 +120,6 @@ The application launches directly into interactive mode with vim-style navigatio
 - **Bundesliga** - Bundesliga (Germany)
 - **UCL** - UEFA Champions League
 
-## Examples
-
-```bash
-# Launch interactive mode (default behavior)
-football-track
-
-# Show help information
-football-track --help
-
-# Check version
-football-track --version
-```
 
 ### Navigation Examples
 Once in interactive mode:
