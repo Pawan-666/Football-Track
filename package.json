@@ -1,0 +1,27 @@
+{
+  "name": "football-track-cli",
+  "version": "1.0.0",
+  "description": "Interactive CLI tool with vim-style navigation to track football fixtures, results, and standings for top leagues",
+  "main": "src/index.js",
+  "bin": {
+    "football-track": "./bin/football-track"
+  },
+  "scripts": {
+    "start": "node bin/football-track",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["football", "soccer", "cli", "fixtures", "results", "standings"],
+  "author": "Football Track CLI",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "axios": "^1.6.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.3",
+    "node-notifier": "^10.0.1",
+    "inquirer": "^9.2.12"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

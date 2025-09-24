@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+
+const { interactive } = require('../src/commands');
+const pkg = require('../package.json');
+
+// Check for help or version flags
+const args = process.argv.slice(2);
+
+if (args.includes('--version') || args.includes('-v')) {
+  console.log(pkg.version);
+  process.exit(0);
+}
+
+if (args.includes('--help') || args.includes('-h')) {
+  console.log(`
+Football Track CLI v${pkg.version}
+
+Interactive football tracking with vim-style navigation
+
+Usage:
+  football-track         Start interactive mode (default)
+  football-track --help  Show this help
+  football-track --version Show version
+
+Navigation:
+  h/l         Move horizontally (leagues or views)
+  j/k         Move vertically (between menu bars)
+  1-6         Jump to league by number (1=EPL, 2=La Liga, etc.)
+  r/Enter     Refresh current data
+  q/Esc       Quit interactive mode
+  ?           Show detailed help
+
+Available Leagues:
+  1. EPL (Premier League)     4. Ligue 1
+  2. La Liga                  5. Bundesliga
+  3. Serie A                  6. UCL (Champions League)
+
+Views: Table, Fixtures, Results
+`);
+  process.exit(0);
+}
+
+// Default behavior: Start interactive mode directly
+interactive();
