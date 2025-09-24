@@ -2,6 +2,15 @@
 
 An interactive command-line interface tool to track football fixtures, results, and standings for top leagues including Premier League, Champions League, La Liga, Serie A, Ligue 1, and Bundesliga.
 
+~ `football-track`
+
+<img width="1352" height="804" alt="image" src="https://github.com/user-attachments/assets/323616a8-8534-4eab-b7d4-25493dc0aecd" />
+
+<img width="1370" height="781" alt="image" src="https://github.com/user-attachments/assets/a3d88efb-86c5-4c90-be3d-a233d02a02be" />
+
+<img width="1352" height="804" alt="image" src="https://github.com/user-attachments/assets/6bf20fab-4fdd-4023-a7ed-4986287caeee" />
+
+
 ## Features
 
 - 🎮 **Interactive Mode**: Vim-style navigation with instant feedback
